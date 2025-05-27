@@ -11,7 +11,7 @@
         android:gravity="center_vertical"
         tools:ignore="UseCompoundDrawables"
         android:paddingTop="14dp"
-        android:paddingVertical="16dp">
+        android:paddingBottom="16dp">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -26,7 +26,7 @@
             android:text="@string/settings"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="22sp" />
+            android:textSize="@dimen/textSize" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:text="@string/switch_theme"
             android:textColor="@color/black"
-            android:textSize="22sp"
+            android:textSize="@dimen/textSize"
             android:layout_weight="1"/>
 
         <Switch
@@ -69,7 +69,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/share_app"
-            android:textSize="22sp"
+            android:textSize="@dimen/textSize"
             android:textColor="@color/black"
             android:layout_weight="1" />
 
@@ -95,7 +95,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/write_support"
-            android:textSize="22sp"
+            android:textSize="@dimen/textSize"
             android:textColor="@color/black"
             android:layout_weight="1"/>
 
@@ -121,7 +121,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/user_agreement"
-            android:textSize="22sp"
+            android:textSize="@dimen/textSize"
             android:textColor="@color/black"
             android:layout_weight="1"/>
 

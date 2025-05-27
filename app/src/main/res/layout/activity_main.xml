@@ -12,7 +12,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingStart="@dimen/padleft"
+            android:paddingStart="@dimen/padLeft"
             android:paddingTop="14dp"
             android:text="@string/app_name"
             android:textColor="@color/white"
@@ -38,11 +38,12 @@
             android:text="@string/search"
             android:textColor="@color/black"
             android:textSize="22sp"
-            app:cornerRadius="16dp"
+            app:cornerRadius="@dimen/radiusButton"
             app:icon="@drawable/search"
             app:iconGravity="textStart"
-            app:iconPadding="8dp"
-            app:iconTint="@color/black" />
+            app:iconPadding="@dimen/iconPadding"
+            app:iconTint="@color/black"
+            android:textAllCaps="false"/>
 
         <Button
             android:id="@+id/media_but"
@@ -53,12 +54,13 @@
             android:backgroundTint="@color/white"
             android:text="@string/media"
             android:textColor="@color/black"
-            android:textSize="22sp"
-            app:cornerRadius="16dp"
+            android:textSize="@dimen/textSizeButton"
+            app:cornerRadius="@dimen/radiusButton"
             app:icon="@drawable/media"
             app:iconGravity="textStart"
-            app:iconPadding="8dp"
-            app:iconTint="@color/black" />
+            app:iconPadding="@dimen/iconPadding"
+            app:iconTint="@color/black"
+            android:textAllCaps="false"/>
 
         <Button
             android:id="@+id/settings_but"
@@ -69,12 +71,13 @@
             android:backgroundTint="@color/white"
             android:text="@string/settings"
             android:textColor="@color/black"
-            android:textSize="22sp"
-            app:cornerRadius="16dp"
+            android:textSize="@dimen/textSizeButton"
+            app:cornerRadius="@dimen/radiusButton"
             app:icon="@drawable/settings"
             app:iconGravity="textStart"
-            app:iconPadding="8dp"
-            app:iconTint="@color/black" />
+            app:iconPadding="@dimen/iconPadding"
+            app:iconTint="@color/black"
+            android:textAllCaps="false"/>
     </LinearLayout>
 
 </LinearLayout>

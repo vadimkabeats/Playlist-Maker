@@ -15,23 +15,27 @@ class MainActivity : AppCompatActivity() {
         val button_search = findViewById<Button>(R.id.search_but)
         val button_media = findViewById<Button>(R.id.media_but)
         val button_settings = findViewById<Button>(R.id.settings_but)
-        // Лямбда-выражение для первой кнопки
+        // Лямбда-выражение для кнопки поиск
         button_search.setOnClickListener {
-            Toast.makeText(this, "Нажали на кнопку" + " Поиск", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, "Нажали на кнопку" + " Поиск", Toast.LENGTH_SHORT).show()
+            val displayIntentSearch = Intent(this, SearchActivity::class.java)
+            startActivity(displayIntentSearch)
         }
 
-        // Анонимный класс для второй кнопки
+        // Анонимный класс для кнопки медиатеки
+        val displayIntentMedia = Intent(this, MediaActivity::class.java)
         val buttonClickListener = object : View.OnClickListener {
             override fun onClick(v: View?) {
-                Toast.makeText(this@MainActivity, "Нажали на кнопку (анонимный класс)" + " Медиатека", Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this@MainActivity, "Нажали на кнопку (анонимный класс)" + " Медиатека", Toast.LENGTH_SHORT).show()
+                startActivity(displayIntentMedia)
             }
         }
         button_media.setOnClickListener(buttonClickListener)
 
-        //Лямбда-выражение для третьей кнопки
+        //Лямбда-выражение для кнопки настройки
         button_settings.setOnClickListener {
-            val displayIntent = Intent(this, SettingsActivity::class.java)
-            startActivity(displayIntent)
+            val displayIntentSettings = Intent(this, SettingsActivity::class.java)
+            startActivity(displayIntentSettings)
         }
     }
 }
