@@ -11,4 +11,5 @@
     <dimen name="toolbarTextSize">12sp</dimen>
     <dimen name="endPadding">12dp</dimen>
     <dimen name="setMarginTop">42dp</dimen>
+    <dimen name="setPaddingVert">21dp</dimen>
 </resources>
